@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  <title>Clicker</title>
+</head>
+<body>
+  <div id="div1">
+    <label for="nombreJugador">J1:</label>
+    <input type="text" name="nombreJugador" id="nombreJugador" value="jugador1">
+    <div id="stats">
+      <label for="fuerzaJugador">Fuerza</label>
+      <input type="text" name="fuerzaJugador" id="fuerzaJugador">
+    </div>
+  </div>
+  <div id="div2">
+    <button onclick="iniciar()" class="btn btn-success btn-block">¡Empezar!</button>
+  </div>
+  <div id="div3">
+    <label for="oro">Oro:</label>
+    <input type="text" name="oro" id="oro" value="0" readonly>
+    <br>
+    <label for="contadorAsesinatos">Asesinatos:</label>
+    <input type="text" name="contadorAsesinatos" id="contadorAsesinatos" value="0" readonly>
+    <br>
+    <label for="vidaEnemigo">Enemigo:</label>
+    <input type="text" name="nombreEnemigo" id="nombreEnemigo" readonly>
+    <input type="text" name="vidaEnemigo" id="vidaEnemigo" value="0" readonly>
+
+
+
+    <button onclick="cliquea()" class="btn btn-primary btn-block">Atacar!</button>
+    <button onclick="masFuerza()" class="btn btn-danger btn-block" id="btnFuerzaPlus">Mas fuerza!</button>
+  </div>
+</body>
+</html>
+
+<script src="./js/clases.js"></script>
+<script src="./js/funciones.js"></script>
